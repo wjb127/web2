@@ -1,0 +1,148 @@
+/* external style sheet */
+/* */
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Merriweather|Noto+Sans+KR');
+
+* { margin: 0; padding: 0;}
+body { font-family : 'Merriweather', 'Noto Sans KR'; }
+li { list-style : none; }
+img { border : 0 ; }
+a {
+	text-decoration : none;
+}
+li {
+	text-decoration : none;
+}
+.now_page {
+	border-top : 2px solid red;
+	border-bottom : 2px solid red;
+}
+.header {
+	margin-bottom: 30px;
+	border-bottom: 2px solid black;
+	font-family: 'Baloo Chettan', 'Noto Sans KR' ;
+}
+.header > h1 {
+	width: 960px;
+	margin: 0 auto;
+}
+.header a {
+	color :black ;
+}
+.header > nav {
+	width: 960px;
+	margin: 0 auto;
+}
+.header > nav > ul {
+	overflow : hidden;
+
+}
+.header >nav > ul > li{
+	float:left;
+	height : 35px;
+	margin : 4px;
+}
+.footer {
+	margin-top: 30px;
+	border-top: 2px solid black;
+	font-family: 'Baloo Chettan', 'Noto Sans KR' ;
+}
+.footer > h4 {
+	width: 960px;
+	margin: 0 auto;
+}
+.footer  a {
+	color : grey;
+}
+.main_container { 
+	width: 960px;
+	margin: 0 auto;			 
+}
+.section_title {
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+	padding-bottom: 4px;
+	padding-top: 20px;
+}
+article {
+	margin : 0;
+	padding :0;
+	float :left ;
+}
+.articlebox {
+
+	overflow: hidden;
+	margin: 4px;
+	padding: 4px;
+	border : 1px solid black;
+	width : 420px;
+	height : 100px;
+}
+.articlebox .short{
+	display : none;
+}
+.articlebox .long{
+	display : inline;
+}
+.articlebox img
+{
+	float: left;	
+	margin-right : 10px;
+	height : 90px;
+}
+.clear
+{
+	clear:both;
+}
+
+@media screen and (max-width : 480px) {
+	article {
+		float : none;
+	}
+
+	.articlebox {
+		width : 400px;
+
+	}
+	.articlebox h4{
+		font-size : 30;
+	}
+	.articlebox .short{
+		display: inline;
+	}
+	.articlebox .long{
+		display: none;
+	}
+
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+	.articlebox {
+		width : 600px;
+
+	}
+	.articlebox h4{
+		font-size : 30;
+		display:block;
+	}
+	.articlebox .short{
+		display: none;
+	}
+	.articlebox .long{
+		display: block;
+	}
+	.articlebox .description{
+		float: right;
+		text-align: right;
+	}
+
+}
+
+@media print {
+	footer {
+		display :none;
+	}
+	header {
+		display :none;
+	}
+}
